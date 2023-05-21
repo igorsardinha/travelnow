@@ -1,0 +1,146 @@
+.container-travelmatch {
+  margin-top: 150px;
+  background-color: #ffffff;
+}
+.teste-tabs {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  background-color: #ffffff;
+}
+.titulo-banner {
+  font-family: "Poppins", sans-serif;
+  font-size: 32pt;
+  padding-top: 50px;
+  font-weight: 600;
+  color: #220845;
+}
+.subtitulo-banner {
+  font-family: "Poppins", sans-serif;
+  font-size: 16pt;
+  padding-top: 50px;
+  font-weight: 600;
+  color: #5f5f5f;
+}
+.subtitulo-enviar {
+  font-family: "Poppins", sans-serif;
+  font-size: 16pt;
+  padding: 50px;
+  font-weight: 600;
+  color: #000000;
+}
+.texto-enviar {
+  font-family: "Poppins", sans-serif;
+  font-size: 12pt;
+  padding: 50px;
+  font-weight: 300;
+  color: #363636;
+}
+#form-travelmatch {
+  background-color: #ffffff;
+  margin: 100px auto;
+  padding: 100px;
+  width: 70%;
+  height: 600px;
+  min-width: 400px;
+}
+.tab {
+  display: none;
+  height: 400px;
+}
+
+.etapa {
+  height: 5px;
+  width: 25px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+/* Mark the active step: */
+.etapa.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.etapa.finish {
+  background-color: #04aa6d;
+}
+#prevBtn {
+  font-family: "Poppins", sans-serif;
+  background-color: #5099ff;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  width: 120px;
+}
+#prevBtn:hover {
+  background-color: #76afff;
+  transition: ease-in-out 0.7s;
+}
+#nextBtn {
+  font-family: "Poppins", sans-serif;
+  background-color: #5099ff;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  width: 120px;
+}
+#nextBtn:hover {
+  background-color: #76afff;
+  transition: ease-in-out 0.7s;
+}
+#pergunta {
+  font-family: "Poppins", sans-serif;
+  font-size: 16pt;
+  font-weight: 400;
+  color: #555555;
+  padding-left: 100px;
+  padding-bottom: 50px;
+}
+#num-pergunta {
+  border-radius: 50%;
+  color: #db2e53;
+  font-weight: 600;
+  font-size: 18pt;
+}
+.label-pergunta {
+  font-family: "Poppins", sans-serif;
+  font-size: 12pt;
+  font-weight: 400;
+  outline: 2px solid #220845;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65%;
+  height: 50px;
+  border-radius: 5px;
+  color: #220845;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.label-pergunta:hover {
+  background-color: #220845;
+  color: #ffffff;
+}
+
+.input-pergunta {
+  display: none;
+}
+.input-pergunta {
+  display: none;
+}
+input[type="radio"]:checked + #label-pergunta {
+  background-color: #220845;
+  color: #ffffff;
+}
