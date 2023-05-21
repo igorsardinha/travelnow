@@ -38,16 +38,6 @@ CREATE TABLE `destinos` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Extraindo dados da tabela `destinos`
---
-
-INSERT INTO `destinos` (`id`, `destino`, `descricao`, `foto`, `match_resps`, `created_at`, `updated_at`) VALUES
-(1, 'Paris', 'adafasdfadsfadsf', 'https://i.imgur.com/RfPC9Jg.jpg', 'adadsfadsf', '2023-05-15', '2023-05-15 22:06:23'),
-(2, 'Paris', 'adafasdfadsfadsf', 'https://i.imgur.com/RfPC9Jg.jpg', 'adadsfadsf', '2023-05-15', '2023-05-15 22:06:33');
-
--- --------------------------------------------------------
-
---
 -- Estrutura da tabela `usuarios`
 --
 
@@ -66,9 +56,6 @@ CREATE TABLE `usuarios` (
 --
 -- Extraindo dados da tabela `usuarios`
 --
-
-INSERT INTO `usuarios` (`id`, `nome`, `sobrenome`, `email`, `telefone`, `senha`, `picture`, `create_at`, `updated_at`) VALUES
-(0, 'Ketryn', 'Santos', 'ketrynst@gmail.com', '17992562834', '$2y$10$L3X5KTPrK7hMSr.cjhYWL.w.RljDypX0tc1v.tAXpNTbiUf.ROWsG', NULL, '2023-05-15 21:50:32', '2023-05-15 21:52:07');
 
 --
 -- Índices para tabelas despejadas
@@ -95,7 +82,12 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de tabela `destinos`
 --
 ALTER TABLE `destinos`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
+COMMIT;
+
+
+ALTER TABLE `usuarios`
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
