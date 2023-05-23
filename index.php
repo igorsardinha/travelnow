@@ -127,7 +127,7 @@ if (isset($_SESSION["id"])) {
           </li>
           <li><a href="travelmatch.php" class="menu-item"><b>Travel</b>Match®</a></li>
           <li><a href="destinos.php" class="menu-item">Destinos</a></li>
-          <li><a href="contato.html" class="menu-item">Contato</a></li>
+          <li><a href="contato.php" class="menu-item">Contato</a></li>
         </ul>
       </nav>
       <?php if (

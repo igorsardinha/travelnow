@@ -23,6 +23,19 @@ SET time_zone = "+00:00";
 
 -- --------------------------------------------------------
 
+CREATE TABLE `contatos` (
+  `id` int(3) NOT NULL,
+  `nome` varchar(50) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `telefone` varchar(16) NOT NULL,
+  `mensagem` text NOT NULL,
+  `created_at` datetime(6) NOT NULL DEFAULT current_timestamp(6),
+  `updated_at` datetime(6) NOT NULL DEFAULT current_timestamp(6) ON UPDATE current_timestamp(6)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+ALTER TABLE `contatos`
+  ADD PRIMARY KEY (`id`);
+
 --
 -- Estrutura da tabela `destinos`
 --
