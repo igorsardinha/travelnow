@@ -31,7 +31,7 @@ if (empty($dados['nome'])) {
     $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
     $headers .= 'From: $nome <$email>';
 
-    $enviaremail = mail($destino, $assunto, $dados['mensagem'], $headers);
+    //$enviaremail = mail($destino, $assunto, $dados['mensagem'], $headers);
 
 
     if ($contato_insert->rowCount()) {
