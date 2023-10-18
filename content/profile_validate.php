@@ -5,15 +5,6 @@ include_once "./config/connection.php";
 
 $dados = filter_input_array(INPUT_POST, FILTER_DEFAULT);
 
-/*$dados=array(
-    'nome' => "TESTE",
-    'sobrenome' =>"TESTE",
-    'email' => "igor.sardinha@outlook.com",
-    'telefone' => "1799999999",
-    'senha' => "W3r2k1g1lrn@",
-    'senha-antiga' => "W3r2k1g1lrn@"
-);*/
-
 $senha = $dados["senha"];
 $senha_antiga = $dados["senha-antiga"];
 
