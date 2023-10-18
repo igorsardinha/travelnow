@@ -4,14 +4,6 @@ include_once "./config/connection.php";
 
 $dados = filter_input_array(INPUT_POST, FILTER_DEFAULT);
 
-/*$dados = [
-  "nome" => "TESTE",
-  "sobrenome" => "TESTE",
-  "email" => "123@gmail.com",
-  "telefone" => "1799999999",
-  "senha" => "W3r2k1g1lrn@",
-];*/
-
 if (empty($dados["nome"])) {
   $retorna = [
     "erro" => true,
